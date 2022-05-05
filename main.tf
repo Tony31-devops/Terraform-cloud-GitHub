@@ -15,5 +15,6 @@ provider "aws" {
 
 resource "aws_instance" "tony" {
 	ami = "ami-0022f774911c1d690" 
+	count = 2
 	instance_type = "t2.micro"
 }
